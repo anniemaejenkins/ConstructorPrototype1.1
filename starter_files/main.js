@@ -7,7 +7,7 @@
 //            /____/
 
 // Dog Constructor & Prototype
-function Dog (name, status, color, hungry, ownder) {
+function Dog (name, status, color, hungry, owner) {
   this.name = name;
   this.status = status;
   this.color = color;
@@ -21,7 +21,7 @@ function Dog (name, status, color, hungry, ownder) {
 let sadie = new Dog ('sadie', 'normal', 'black', false, 'mason');
 let moonshine = new Dog ('moonshine', undefined, undefined, true, undefined);
 let atticus = new Dog ('atticus', undefined, undefined, undefined, undefined);
-
+// console.log(sadie);
 //     __
 //    / /_  __  ______ ___  ____ _____  _____
 //   / __ \/ / / / __ `__ \/ __ `/ __ \/ ___/
@@ -31,6 +31,14 @@ let atticus = new Dog ('atticus', undefined, undefined, undefined, undefined);
 // Human Constructor & Prototype
 function Human (cool) {
     this.cool = cool;
+}
+
+function Mason(){
+  this.pet = 'happy';
+}
+
+function Julia(){
+  this.hungry = false 
 }
 
 Human.prototype.feed = function(dog){
